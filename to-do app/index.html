@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="todo-container">
+        <h1>ToDo App <span>🌟</span></h1>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search tasks..."
+            aria-label="Search tasks"
+        >
+
+        <form id="taskForm" class="add-task">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="✍️ Add a new task..."
+                aria-label="New task"
+                maxlength="200"
+                required
+            >
+            <button type="submit">Add</button>
+        </form>
+
+        <p id="taskCount" class="task-count"></p>
+
+        <ul id="taskList" aria-label="Task list"></ul>
+
+        <p id="emptyMessage" class="empty-message">
+            No tasks yet. Add your first task!
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
